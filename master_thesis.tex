@@ -34,11 +34,12 @@ centertags]{extarticle} %%
 %supervisor
 \begin{flushright} \large
 \emph{Научный руководитель:} \\
-ст. преп., \textsc{Смирнов М. Н.}
+ст. преп. \textsc{Смирнов М. Н.}
 \end{flushright}
  \begin{flushright} \large
 \emph{Рецензент:} \\
-
+\textsc{Пенкрат Н. А.} \\
+менеджер проектов, ООО ``Ланит-Терком''
 \end{flushright}
 \vfill 
 
@@ -63,11 +64,12 @@ centertags]{extarticle} %%
 %supervisor
 \begin{flushright} \large
 \emph{Scientific advisor:} \\
-sr. Lecturer, \textsc{Mikhail Smirnov}
+sr. Lecturer \textsc{Mikhail Smirnov}
 \end{flushright}
  \begin{flushright} \large
 \emph{Reviewer:} \\
-
+\textsc{Nickolay Penkrat} \\
+Project Manager, Lanit-Tercom LLC
 \end{flushright}
 \vfill 
 
@@ -129,7 +131,7 @@ sr. Lecturer, \textsc{Mikhail Smirnov}
     \item Детектирование маркеров дорожной разметки.
 \end{itemize} 
 
-\section{Обзор работ в данной области}
+\section{Обзор}
 
 % Старые Работы
 
@@ -169,7 +171,9 @@ sr. Lecturer, \textsc{Mikhail Smirnov}
 
 Кроме того, нам известно о системах, разработанных в компаниях Mobileye и Daimler, позволяющих осуществлять навигацию в условиях движения по городу. Однако эти системы закрыты и доступа к ним мы не имеем.
 
-\section{ Выделение областей, отличных от поверхности земли }
+\section {Поиск препятствий движению автомобиля }
+
+\subsection{Выделение областей, отличных от поверхности земли }
 
 Данный метод представляет собой объединение подходов из работ \cite{labayrade2002real} и \cite{broggi2006single}.
 
@@ -222,7 +226,7 @@ sr. Lecturer, \textsc{Mikhail Smirnov}
 
 \section{Трекинг объектов}
 
-\section{ Детектирование маркеров дорожной разметки }
+\section{Детектирование маркеров дорожной разметки}
 Нами было опробовано три различных подхода к детектированию маркеров:
 \begin{itemize}
     \item Детктирование на основе цветовой сегментации
@@ -267,7 +271,9 @@ sr. Lecturer, \textsc{Mikhail Smirnov}
 
 На изображении \ref{fig:ransac_markers} можно видеть пример работы данного алгоритма. Синими крестами изображены ячейки, помеченные как "содержит маркер". Центральное изображение прдставляет собой карту градиентов.
 
-\section{Данные}
+\section{Апробация}
+
+\subsection{Данные}
 
 Для оценки алгоритмов мы произвели поиск наборов данных с дорожными сценами и нашли следующие подходящие нам наборы стерео-последовательностей:
 
@@ -279,14 +285,14 @@ sr. Lecturer, \textsc{Mikhail Smirnov}
     \item также у нас есть возможность получить доступ к данным, записанным специалистами компании "Ланит-Терком". Эти данные не размечены, однако это, например, единственный найденный нами источник последовательностей, записанных в условиях бездорожья.
 \end{itemize}
 
-\section{Оценка качества работы алгоритмов}
+\subsection{Оценка качества работы алгоритмов}
 
 \section{Заключение}
 
 
 
 \newpage
-\section{Дополнение 1.}
+\section{Приложение 1.}
 \begin{figure}[h]
      \includegraphics[width=\textwidth]{basic_vdisparity_good.png}
      \caption{Пример удачной работы алгоритма выделения областей, отличных от поверхности земли }
